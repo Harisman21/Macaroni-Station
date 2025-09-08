@@ -1,15 +1,3 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  reactStrictMode: true,
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "source.unsplash.com",
-      },
-    ],
-  },
-};
-
-export default nextConfig;
+export default {
+  output: 'export',
+} as const;
